@@ -1,0 +1,18 @@
+servers:
+#- server: 'Server Name'
+#  patch_list: URI to patch list file
+#  patch_dir: URI to patch files directory (make sure it ends with /)
+#  checksum_list: Checksum list, based on Ai4rei json formatted files (Optional)
+#  output_dir: output directory of where to save the patches
+#  patch_track_file: the name of the tracking file (aka where the last patch id is kept)
+- server: 'kRO: Zero'
+  patch_list: http://ropatch.gnjoy.com/Patchinfo_Zero/patch2.txt
+  patch_dir: http://ropatch.gnjoy.com/Patchfile_Zero/
+  output_dir: zero
+  patch_track_file: patch_zero.txt
+- server: 'kRO'
+  patch_list: http://ropatch.gnjoy.com/PatchInfo/patch2.txt
+  patch_dir: http://ropatch.gnjoy.com/Patch/
+  output_dir: re
+  patch_track_file: patch_re.txt
+    
