@@ -33,7 +33,9 @@ class patchLib
 		foreach($this->config["servers"] as $server) {
 			if (!$this->loadPatchList($server))
 				$retVal = false;
-			$this->loadChecksumList($server);
+
+			if (isset($server["checksum_list"]))
+				$this->loadChecksumList($server);
 		}
 
 		return $retVal;
